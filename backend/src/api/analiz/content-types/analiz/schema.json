@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analizs",
+  "info": {
+    "singularName": "analiz",
+    "pluralName": "analizs",
+    "displayName": "Analiz"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "analiz_date": {
+      "type": "datetime"
+    },
+    "fosfat": {
+      "type": "decimal"
+    },
+    "potasyum": {
+      "type": "decimal"
+    },
+    "azot": {
+      "type": "decimal"
+    },
+    "su": {
+      "type": "decimal"
+    }
+  }
+}
