@@ -12,7 +12,13 @@ import {
 
 import "@pankod/refine-antd/dist/styles.min.css";
 
-import { AnalizList, AnalizShow, AnalizEdit,AnalizCreate } from "./pages/analiz";
+import {
+  AnalizList,
+  AnalizShow,
+  AnalizEdit,
+  AnalizCreate,
+} from "./pages/analiz";
+import { AnalizChart } from "./pages/chart";
 function App() {
   // const API_URL = "your-strapi-api-url";
   const API_URL = "http://localhost:1337";
@@ -31,6 +37,14 @@ function App() {
           show: AnalizShow,
           edit: AnalizEdit,
           create: AnalizCreate,
+        },
+        {
+          name: "analizs",
+          options: {
+            route: "chart",
+            label: "Grafik",
+          },
+          list: AnalizChart,
         },
       ]}
       notificationProvider={notificationProvider}
