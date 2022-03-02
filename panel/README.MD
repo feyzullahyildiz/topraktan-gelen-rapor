@@ -5,7 +5,7 @@ This project was generated with [superplate](https://github.com/pankod/superplat
 
 ## Getting Started
 
-superplate is all-in-one project generator. Create your project with the tools you need without spending hours on setting them up.
+superplate is a Next.js all-in-one project generator. Create your project with the tools you need without spending hours on setting them up.
 
 ## Available Scripts
 
@@ -30,6 +30,13 @@ superplate is all-in-one project generator. Create your project with the tools y
 ## Learn More
 
 To learn more about **superplate**, please check out the [Documentation](https://github.com/pankod/superplate).
+
+
+### **no**
+
+
+
+[Go To Documentation]()
 
 
 ### **css**
