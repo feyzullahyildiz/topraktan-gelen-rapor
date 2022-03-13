@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:16-slim
 WORKDIR /home/node/app
 ENV REACT_APP_API_URL=""
 
@@ -11,7 +11,7 @@ ADD panel .
 RUN yarn build
 
 
-FROM node:16-alpine
+FROM node:16-slim
 WORKDIR /home/node/app
 
 ADD backend/package.json package.json
