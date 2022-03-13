@@ -21,7 +21,9 @@ import {
 import { AnalizChart } from "./pages/chart";
 function App() {
   // const API_URL = "your-strapi-api-url";
-  const API_URL = "http://localhost:1337";
+  const API_URL = process.env.REACT_APP_API_URL;
+  console.log("API_URL", process.env
+  );
 
   const { authProvider, axiosInstance } = strapiAuthProvider(API_URL);
   const dataProvider = DataProvider(API_URL + "/api", axiosInstance);
