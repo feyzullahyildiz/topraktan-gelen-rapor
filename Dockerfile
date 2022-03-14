@@ -1,4 +1,4 @@
-FROM node:16-slim
+FROM node:16
 WORKDIR /home/node/app
 ENV REACT_APP_API_URL=""
 
@@ -11,7 +11,7 @@ ADD panel .
 RUN yarn build
 
 
-FROM node:16-slim
+FROM node:16
 WORKDIR /home/node/app
 
 ADD backend/package.json package.json
@@ -19,6 +19,7 @@ ADD backend/yarn.lock yarn.lock
 
 RUN yarn install --network-timeout 100000
 ADD backend .
+RUN yarn build
 COPY --from=0 /home/node/app/build /home/node/app/public
 # ENV GITHUB_OAUTH_REDIRECT_URL=""
 CMD [ "yarn", "start" ]
